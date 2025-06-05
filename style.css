@@ -1,0 +1,424 @@
+/* style.css */
+
+/* Reset básico e estilos globais (manter do código anterior) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Header e Navegação (manter do código anterior, com ajustes de texto se necessário) */
+header {
+    background-color: #8B4513;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #FFD700;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Seções Gerais (manter do código anterior) */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+section:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #8B4513;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.section-description { /* Para descrições mais curtas abaixo dos títulos */
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #8B4513;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+    background-color: #DAA520;
+    transform: translateY(-2px);
+}
+
+.btn-small { /* Botão menor para apresentações/ingressos */
+    padding: 8px 18px;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    background-color: #A0522D; /* Siennacolor */
+    color: #fff;
+}
+
+.btn-small:hover {
+    background-color: #8B4513;
+}
+
+
+/* Hero Section (manter do código anterior) */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero-content h2 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #eee;
+}
+
+/* Nova Seção: Integrantes */
+.integrantes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.integrante-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid #FFD700; /* Linha dourada no topo */
+}
+
+.integrante-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.integrante-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Fotos circulares */
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #8B4513; /* Borda marrom */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.integrante-card h3 {
+    font-size: 1.8rem;
+    color: #A0522D;
+    margin-bottom: 10px;
+}
+
+.integrante-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.social-integrante {
+    margin-top: 15px;
+}
+
+.social-integrante img {
+    height: 30px;
+    margin: 0 8px;
+    transition: transform 0.2s ease;
+}
+
+.social-integrante img:hover {
+    transform: scale(1.15);
+}
+
+/* Nova Seção: Apresentações */
+.apresentacao-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.apresentacao-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+    border-left: 5px solid #A0522D; /* Linha lateral */
+    transition: transform 0.3s ease;
+}
+
+.apresentacao-item:hover {
+    transform: translateY(-3px);
+}
+
+.apresentacao-item h3 {
+    font-size: 1.7rem;
+    color: #8B4513;
+    margin-bottom: 15px;
+}
+
+.apresentacao-item p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.apresentacao-item p strong {
+    color: #333;
+}
+
+
+/* Galeria (manter do código anterior) */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+/* Aulas (manter ou ajustar conforme sua decisão) */
+.aula-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.aula-item h3 {
+    color: #A0522D;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.aula-item ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.aula-item ul li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Contato (manter do código anterior) */
+#contato form {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+#contato label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+#contato input[type="text"],
+#contato input[type="email"],
+#contato textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contato textarea {
+    resize: vertical;
+}
+
+#contato button.btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.social-media {
+    margin-top: 30px;
+}
+
+.social-media img {
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer (manter do código anterior) */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+/* Responsividade Básica (manter e ajustar se necessário) */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin: 0 10px 10px 10px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .gallery-grid, .integrantes-grid, .apresentacao-list {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
+}
