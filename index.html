@@ -3,137 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trio Hécate - A Magia da Dança do Ventre</title> <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="logo.png" alt="Logo do Trio Hécate">
-                <h1>Trio Hécate</h1> </div>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre o Trio</a></li> <li><a href="#integrantes">Integrantes</a></li> <li><a href="#apresentacoes">Apresentações</a></li> <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#contato">Contato</a></li>
+    <title>Trio Hécate - A Magia da Dança do Ventre</title>
+    <link rel="stylesheet" href="style.css">
+     <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+<body class="font-sans text-gray-800 bg-gray-100 leading-relaxed">
+
+    <header class="bg-brown-dark text-white py-4 fixed w-full top-0 z-50 shadow-md">
+        <nav class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="img/logo.svg" alt="Logo do Trio Hécate" class="h-12 w-12 rounded-full mr-3">
+                <h1 class="text-3xl font-bold text-gold-light">Trio Hécate</h1>
+            </div>
+            <ul class="flex flex-wrap justify-center space-x-6 md:space-x-8">
+                <li><a href="#inicio" class="text-white hover:text-gold-light transition duration-300">Início</a></li>
+                <li><a href="#sobre" class="text-white hover:text-gold-light transition duration-300">Sobre o Trio</a></li>
+                <li><a href="#integrantes" class="text-white hover:text-gold-light transition duration-300">Integrantes</a></li>
+                <li><a href="#apresentacoes" class="text-white hover:text-gold-light transition duration-300">Apresentações</a></li>
+                <li><a href="#galeria" class="text-white hover:text-gold-light transition duration-300">Galeria</a></li>
+                <li><a href="#contato" class="text-white hover:text-gold-light transition duration-300">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="inicio" class="hero">
-            <div class="hero-content">
-                <h2>Trio Hécate: A Essência da Dança do Ventre</h2> <p>Descubra a arte, a beleza e a expressão em cada movimento das três faces da dança.</p>
-                <a href="#apresentacoes" class="btn">Próximas Apresentações</a> </div>
+    <main class="pt-20">
+    <section id="inicio" class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+        <div id="carousel" class="absolute inset-0 w-full h-full">
+            <img src="img/carrossel/9.jpg" alt="Apresentação do Trio Hécate" class="carousel-item absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-1000 ease-in-out">
+            <img src="img/carrossel/10.jpg" alt="Dançarinas do Trio Hécate" class="carousel-item absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-1000 ease-in-out">
+            <img src="img/carrossel/11.jpg" alt="Performance de Dança do Ventre" class="carousel-item absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-1000 ease-in-out">
+        <img src="img/carrossel/11.jpg" alt="Performance de Dança do Ventre" class="carousel-item absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-1000 ease-in-out">
+            <img src="img/carrossel/12.jpg" alt="Trio Hécate em Ação" class="carousel-item absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-1000 ease-in-out">
+            <img src="img/carrossel/13.jpg" alt="Dança do Ventre com Trio Hécate" class="carousel-item absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-1000 ease-in-out">
+            <img src="img/carrossel/14.jpg" alt="Trio Hécate no Palco" class="carousel-item absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-1000 ease-in-out">
+        </div>
+        <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+        <div class="z-20 text-white p-4">
+            <h2 class="text-5xl md:text-6xl font-bold mb-4 animate-fade-in-down">Trio Hécate: A Essência da Dança do Ventre</h2>
+            <p class="text-xl md:text-2xl mb-8 animate-fade-in-up">Descubra a arte, a beleza e a expressão em cada movimento das três faces da dança.</p>
+            <a href="#apresentacoes" class="bg-gold-light text-brown-dark px-8 py-4 rounded-full font-semibold text-lg hover:bg-gold-dark transform hover:-translate-y-1 transition duration-300 ease-in-out shadow-lg">Próximas Apresentações</a>
+        </div>
+    </section>
+</main>
+
+        <section id="sobre" class="py-16 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-brown-dark mb-6">Sobre o Trio Hécate</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-4">O Trio Hécate nasceu da paixão compartilhada de três bailarinas pela dança do ventre, buscando unir técnica, emoção e uma profunda conexão em suas performances. Inspiradas pela deusa da magia e dos caminhos, trazemos ao palco a versatilidade e a profundidade dessa arte milenar, explorando diferentes estilos e fusões.</p>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">Nossas apresentações são uma jornada através de ritmos envolventes e coreografias expressivas, criadas para encantar e transportar o público para a magia do Oriente.</p>
+            </div>
         </section>
 
-        <section id="sobre" class="container">
-            <h2>Sobre o Trio Hécate</h2> <p>O Trio Hécate nasceu da paixão compartilhada de três bailarinas pela dança do ventre, buscando unir técnica, emoção e uma profunda conexão em suas performances. Inspiradas pela deusa da magia e dos caminhos, trazemos ao palco a versatilidade e a profundidade dessa arte milenar, explorando diferentes estilos e fusões.</p>
-            <p>Nossas apresentações são uma jornada através de ritmos envolventes e coreografias expressivas, criadas para encantar e transportar o público para a magia do Oriente.</p>
-        </section>
-
-        <section id="integrantes" class="container">
-            <h2>Nossas Integrantes</h2>
-            <div class="integrantes-grid">
-                <div class="integrante-card">
-                    <img src="integrante1.jpg" alt="Foto da Integrante 1">
-                    <h3>Nome da Integrante 1</h3>
-                    <p>Bailarina experiente, especializada em [estilo de dança, ex: Dança Clássica Oriental]. Com uma trajetória de X anos, [Nome da Integrante 1] traz ao Trio Hécate sua graça e precisão, combinando movimentos fluidos com uma forte presença de palco.</p>
-                    <div class="social-integrante">
-                        <a href="https://instagram.com/instagram_integrante1" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+        <section id="integrantes" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-brown-dark mb-12">Nossas Integrantes</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="bg-white rounded-lg shadow-xl p-8 transform hover:-translate-y-2 transition duration-300 border-t-4 border-gold-light">
+                        <img src="img/profile-nalini.jpg" alt="Foto da Integrante 1" class="w-40 h-40 rounded-full object-cover mx-auto mb-6 border-4 border-brown-medium shadow-md">
+                        <h3 class="text-2xl font-semibold text-brown-medium mb-3">Nalini Bellydancer</h3>
+                        <p class="text-gray-600 text-base mb-6">Bailarina experiente, especializada em [estilo de dança, ex: Dança Clássica Oriental]. Com uma trajetória de X anos, [Nome da Integrante 1] traz ao Trio Hécate sua graça e precisão, combinando movimentos fluidos com uma forte presença de palco.</p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="https://www.instagram.com/nalini_bellydancer/" target="_blank">
+                                <img src="img/icons8-instagram.svg" alt="Instagram" class="h-8 w-8 hover:scale-110 transition duration-200">
+                            </a>
+                            </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-xl p-8 transform hover:-translate-y-2 transition duration-300 border-t-4 border-gold-light">
+                        <img src="img/profile-edlane.jpg" alt="Foto da Integrante 2" class="w-40 h-40 rounded-full object-cover mx-auto mb-6 border-4 border-brown-medium shadow-md">
+                        <h3 class="text-2xl font-semibold text-brown-medium mb-3">Edlane Amirah</h3>
+                        <p class="text-gray-600 text-base mb-6">Com um estilo vibrante e cheio de energia, [Nome da Integrante 2] é conhecida por sua expressividade e paixão pelos ritmos árabes. Sua pesquisa em [área de interesse, ex: folclore árabe] enriquece as coreografias do trio, adicionando autenticidade e alma.</p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="https://www.instagram.com/edlaneamirah/" target="_blank">
+                                <img src="img/icons8-instagram.svg" alt="Instagram" class="h-8 w-8 hover:scale-110 transition duration-200">
+                            </a>
                         </div>
-                </div>
-                <div class="integrante-card">
-                    <img src="integrante2.jpg" alt="Foto da Integrante 2">
-                    <h3>Nome da Integrante 2</h3>
-                    <p>Com um estilo vibrante e cheio de energia, [Nome da Integrante 2] é conhecida por sua expressividade e paixão pelos ritmos árabes. Sua pesquisa em [área de interesse, ex: folclore árabe] enriquece as coreografias do trio, adicionando autenticidade e alma.</p>
-                    <div class="social-integrante">
-                        <a href="https://instagram.com/instagram_integrante2" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
                     </div>
-                </div>
-                <div class="integrante-card">
-                    <img src="integrante3.jpg" alt="Foto da Integrante 3">
-                    <h3>Nome da Integrante 3</h3>
-                    <p>Mestra na arte da [estilo de dança, ex: fusão oriental], [Nome da Integrante 3] contribui com inovação e criatividade para o Trio Hécate. Sua habilidade em misturar elementos tradicionais e contemporâneos cria performances únicas e cativantes.</p>
-                    <div class="social-integrante">
-                        <a href="https://instagram.com/instagram_integrante3" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <div class="bg-white rounded-lg shadow-xl p-8 transform hover:-translate-y-2 transition duration-300 border-t-4 border-gold-light">
+                        <img src="img/profile-may.jpg" alt="Foto da Integrante 3" class="w-40 h-40 rounded-full object-cover mx-auto mb-6 border-4 border-brown-medium shadow-md">
+                        <h3 class="text-2xl font-semibold text-brown-medium mb-3">Mayara Soares</h3>
+                        <p class="text-gray-600 text-base mb-6">Dançarina [estilo de dança, ex: fusão oriental], [Nome da Integrante 3] contribui com inovação e criatividade para o Trio Hécate. Sua habilidade em misturar elementos tradicionais e contemporâneos cria performances únicas e cativantes.</p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="https://instagram.com/mayaradreadful" target="_blank">
+                                <img src="img/icons8-instagram.svg" alt="Instagram" class="h-8 w-8 hover:scale-110 transition duration-200">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="apresentacoes" class="container">
-            <h2>Nossas Apresentações</h2>
-            <p class="section-description">Confira as próximas datas e locais onde você poderá vivenciar a magia do Trio Hécate ao vivo!</p>
-            <div class="apresentacao-list">
-                <div class="apresentacao-item">
-                    <h3>Show de Gala "Noites do Deserto"</h3>
-                    <p><strong>Data:</strong> 15 de Julho de 2025</p>
-                    <p><strong>Horário:</strong> 20:00h</p>
-                    <p><strong>Local:</strong> Teatro Municipal de Fortaleza</p>
-                    <p>Uma noite inesquecível com coreografias inéditas e participações especiais. Garanta seu ingresso!</p>
-                    <a href="#" class="btn-small" target="_blank">Comprar Ingressos</a>
+        <section id="apresentacoes" class="py-16 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-brown-dark mb-6">Nossas Apresentações</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-10">Confira as próximas datas e locais onde você poderá vivenciar a magia do Trio Hécate ao vivo!</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 rounded-lg shadow-lg p-6 text-left border-l-4 border-brown-medium hover:shadow-xl transition duration-300">
+                        <h3 class="text-2xl font-semibold text-brown-dark mb-3">FENDAFOR"</h3>
+                        <p class="text-gray-700 mb-2"><strong>Data:</strong> 2 de Julho de 2025</p>
+                        <p class="text-gray-700 mb-2"><strong>Horário:</strong> 20:00h</p>
+                        <p class="text-gray-700 mb-4"><strong>Local:</strong> Teatro Municipal de Fortaleza</p>
+                        <p class="text-gray-600 mb-6">Uma noite inesquecível com coreografias inéditas e participações especiais. Garanta seu ingresso!</p>
+                        <a href="#" class="inline-block bg-brown-medium text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-brown-dark transition duration-300 shadow">Comprar Ingressos</a>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg shadow-lg p-6 text-left border-l-4 border-brown-medium hover:shadow-xl transition duration-300">
+                        <h3 class="text-2xl font-semibold text-brown-dark mb-3">Mostra Tarab</h3>
+                        <p class="text-gray-700 mb-2"><strong>Data:</strong> 10 de Agosto de 2025</p>
+                        <p class="text-gray-700 mb-2"><strong>Horário:</strong> 14:00h (Workshop) / 18:00h (Apresentação)</p>
+                        <p class="text-gray-700 mb-4"><strong>Local:</strong> Teatro Chico Anysio.
+Av. da Universidade, 2175 - Benfica, Fortaleza - CE</p>
+                        <p class="text-gray-600 mb-6">Aprenda os segredos dos ritmos egípcios e finalize o dia com uma apresentação exclusiva do trio.</p>
+                        <a href="#" class="inline-block bg-brown-medium text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-brown-dark transition duration-300 shadow">Mais Informações</a>
+                    </div>
                 </div>
-                <div class="apresentacao-item">
-                    <h3>Workshop e Apresentação "Ritmos do Nilo"</h3>
-                    <p><strong>Data:</strong> 10 de Agosto de 2025</p>
-                    <p><strong>Horário:</strong> 14:00h (Workshop) / 18:00h (Apresentação)</p>
-                    <p><strong>Local:</strong> Estúdio Raízes da Dança</p>
-                    <p>Aprenda os segredos dos ritmos egípcios e finalize o dia com uma apresentação exclusiva do trio.</p>
-                    <a href="#" class="btn-small" target="_blank">Mais Informações</a>
-                </div>
-                <p class="section-description">Fique de olho em nossas redes sociais para atualizações e novas datas!</p>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto mt-10">Fique de olho em nossas redes sociais para atualizações e novas datas!</p>
             </div>
         </section>
 
-        <section id="galeria" class="container">
-            <h2>Galeria de Fotos e Vídeos</h2>
-            <div class="gallery-grid">
-                <img src="galeria1.jpg" alt="Trio Hécate em Apresentação">
-                <img src="galeria2.jpg" alt="Momento de Dança do Trio Hécate">
-                <img src="galeria3.jpg" alt="Bailarinas do Trio Hécate">
-                </div>
+        <section id="galeria" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-brown-dark mb-10">Galeria de Fotos e Vídeos</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <img src="img/3.jpg" alt="Trio Hécate em Apresentação 1" class="w-full h-64 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="img/4.jpg" alt="Trio Hécate em Apresentação 2" class="w-full h-64 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="img/5.jpg" alt="Trio Hécate em Apresentação 3" class="w-full h-64 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="img/6.jpg" alt="Trio Hécate em Apresentação 4" class="w-full h-64 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="img/7.jpg" alt="Trio Hécate em Apresentação 4" class="w-full h-64 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                <img src="img/8.jpg" alt="Trio Hécate em Apresentação 4" class="w-full h-64 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+                <img src="img/9.jpg" alt="Trio Hécate em Apresentação 4" class="w-full h-64 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+            <img src="img/10.jpg" alt="Trio Hécate em Apresentação 4" class="w-full h-64 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+            <img src="img/11.jpg" alt="Trio Hécate em Apresentação 4" class="w-full h-64 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+        <img src="img/12.jpg" alt="Trio Hécate em Apresentação 4" class="w-full h-64 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+        <img src="img/13.jpg" alt="Trio Hécate em Apresentação 4" class="w-full h-64 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+        <img src="img/14.jpg" alt="Trio Hécate em Apresentação 4" class="w-full h-64 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+        <img src="img/15.jpg" alt="Trio Hécate em Apresentação 4" class="w-full h-64 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+    <img src="img/editada-IMG-20240324-WA0341.jpg" alt="Trio Hécate em Apresentação 4" class="w-full h-64 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+    <img src="img/trio-hecate-sitejpg.jpg" alt="Trio Hécate em Apresentação 4" class="w-full h-64 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+<img src="img/IMG-20240324-WA0034.jpg" alt="Trio Hécate em Apresentação 4" class="w-full h-64 object-cover rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+</div>
+</div>
         </section>
 
-        <section id="aulas" class="container">
-            <h2>Nossas Aulas</h2>
-            <div class="aula-item">
-                <h3>Workshops Especiais do Trio Hécate</h3>
-                <p>O Trio Hécate oferece workshops temáticos de dança do ventre, explorando técnicas avançadas, fusões e a arte da performance em grupo. Fique atento às nossas redes sociais para as próximas datas e temas!</p>
-                <ul>
-                    <li>Próximo Workshop: "Shimmy e Musicalidade"</li>
-                    <li>Data: A definir</li>
-                    <li>Local: Online e Presencial (Fortaleza)</li>
-                </ul>
+        <section id="contato" class="py-16 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-brown-dark mb-6">Contato</h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-10">Para informações sobre contratações, parcerias ou workshops, entre em contato conosco!</p>
+                <form action="#" method="POST" class="max-w-xl mx-auto bg-gray-50 p-8 rounded-lg shadow-lg">
+                    <div class="mb-6 text-left">
+                        <label for="nome" class="block text-gray-700 text-lg font-semibold mb-2">Nome:</label>
+                        <input type="text" id="nome" name="nome" required class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-light">
+                    </div>
+                    <div class="mb-6 text-left">
+                        <label for="email" class="block text-gray-700 text-lg font-semibold mb-2">Email:</label>
+                        <input type="email" id="email" name="email" required class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-light">
+                    </div>
+                    <div class="mb-8 text-left">
+                        <label for="mensagem" class="block text-gray-700 text-lg font-semibold mb-2">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" required class="w-full p-4 border border-gray-300 rounded-lg resize-y focus:outline-none focus:ring-2 focus:ring-gold-light"></textarea>
+                    </div>
+                    <button type="submit" class="bg-gold-light text-brown-dark px-8 py-4 rounded-full font-semibold text-lg hover:bg-gold-dark transform hover:-translate-y-1 transition duration-300 ease-in-out shadow-lg w-full">Enviar Mensagem</button>
+                </form>
+                <div class="mt-12">
+                    <p class="text-lg text-gray-700 mb-6">Siga o Trio Hécate nas redes sociais:</p>
+                    <div class="flex justify-center space-x-6">
+                        <a href="https://facebook.com/TrioHecateOficial" target="_blank">
+                            <img src="img/icons8-facebook.svg" alt="Facebook do Trio Hécate" class="h-10 w-10 hover:scale-110 transition duration-300">
+                        </a>
+                        <a href="https://instagram.com/TrioHecateOficial" target="_blank">
+                            <img src="img/icons8-instagram.svg" alt="Instagram do Trio Hécate" class="h-10 w-10 hover:scale-110 transition duration-300">
+                        </a>
+                        <a href="https://youtu.be/5U0F6cx6wCE" target="_blank">
+                            <img src="img/icons8-youtube.svg" alt="Vídeo do Trio Hécate" class="h-10 w-10 hover:scale-110 transition duration-300">
+                        </a>
+                    </div>
+                </div>
             </div>
-            <p>Entre em contato para saber mais sobre nossos workshops e possibilidades de aulas personalizadas!</p>
-        </section>
-
-
-        <section id="contato" class="container">
-            <h2>Contato</h2>
-            <p>Ficou interessado(a)? Para informações sobre contratações, parcerias ou workshops, entre em contato conosco!</p>
-            <form action="#" method="POST">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-
-                <button type="submit" class="btn">Enviar Mensagem</button>
-            </form>
-            <div class="social-media">
-                <p>Siga o Trio Hécate nas redes sociais:</p>
-                <a href="https://facebook.com/TrioHecateOficial" target="_blank"><img src="facebook-icon.png" alt="Facebook do Trio Hécate"></a>
-                <a href="https://instagram.com/TrioHecateOficial" target="_blank"><img src="instagram-icon.png" alt="Instagram do Trio Hécate"></a>
-                <a href="https://youtube.com/TrioHecate" target="_blank"><img src="youtube-icon.png" alt="Youtube do Trio Hécate"></a>
-                </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="bg-gray-900 text-white py-8 text-center text-sm">
         <p>&copy; 2025 Trio Hécate. Todos os direitos reservados.</p>
     </footer>
 
